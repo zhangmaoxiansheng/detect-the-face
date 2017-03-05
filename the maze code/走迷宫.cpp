@@ -1,4 +1,4 @@
-//总结，传参的时候数组不用写，只写名字就OK了，然后就是类的命名一定要注意，命名上不要有歧义 
+//�ܽᣬ���ε�ʱ�����鲻��д��ֻд���־�OK�ˣ�Ȼ������������һ��Ҫע�⣬�����ϲ�Ҫ������ 
 #include<iostream>
 #include<string>
 #include<windows.h>
@@ -44,7 +44,7 @@ class maze
 		}
 	   
 	private:
-		//1代表wall，0代表通路
+		//1����wall��0����ͨ·
 		int m_maze[8][9];
 	
 				 
@@ -70,10 +70,10 @@ class person
 		}
 		
 		
-		void move(int _maze[8][9])//传的参数是来自外部的，数据成员不用传 
+		void move(int _maze[8][9])//���Ĳ����������ⲿ�ģ����ݳ�Ա���ô� 
 		{
 			char mv;
-			mv = getch();//wasd,w上
+			mv = getch();//wasd,w��
 			cout<<" ";
 			if(mv == 'w') now.y = now.y - 1;
 			if(mv == 's') now.y = now.y + 1;
@@ -96,7 +96,7 @@ class person
 			{
 				move(_maze);
 			}
-			cout<<"√"<<endl;
+			cout<<"��"<<endl;
 		}
 	private:
 		coordinate start;
@@ -119,7 +119,7 @@ int main()
 	};
 	maze m1(maze1);
 	m1.print();
-	cout<<"游戏介绍wsad代表上下左右,*代表墙，Y是当前位置，按下shift键开始游戏"; 
+	cout<<"��Ϸ����wsad������������,*����ǽ��Y�ǵ�ǰλ�ã�����shift����ʼ��Ϸ"; 
 	person p1;
 	p1.setstart(1,7);
 	p1.setend(7,0);
